@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ransomware Impact on SMBs - 2025 DBIR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="widget-container">
+        <header class="widget-header">
+            <div class="logo-container">
+                <img src="../assets/shield_icon.png" alt="Cybersecurity Shield" class="logo">
+            </div>
+            <div class="title-container">
+                <h1>Ransomware Impact on SMBs</h1>
+                <p class="subtitle">Based on the 2025 Verizon Data Breach Investigations Report</p>
+            </div>
+        </header>
+
+        <nav class="widget-nav">
+            <ul>
+                <li><a href="#overview" class="active">Overview</a></li>
+                <li><a href="#financial">Financial Impact</a></li>
+                <li><a href="#recovery">Recovery</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#attack-vectors">Attack Vectors</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+
+        <main class="widget-content">
+            <!-- Overview Section -->
+            <section id="overview" class="content-section active">
+                <h2>Key Findings</h2>
+                <div class="stat-cards">
+                    <div class="stat-card highlight">
+                        <h3>44%</h3>
+                        <p>of all breaches involved ransomware</p>
+                        <span class="trend up">+37% YoY</span>
+                    </div>
+                    <div class="stat-card critical">
+                        <h3>88%</h3>
+                        <p>of SMB breaches involved ransomware</p>
+                        <span class="comparison">vs. 39% for large organizations</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>22,052</h3>
+                        <p>incidents analyzed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>12,195</h3>
+                        <p>confirmed breaches</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3>Ransomware Prevalence</h3>
+                    <canvas id="prevalenceChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Financial Impact Section -->
+            <section id="financial" class="content-section">
+                <h2>Financial Impact</h2>
+                <div class="stat-cards">
+                    <div class="stat-card highlight">
+                        <h3>$115,000</h3>
+                        <p>Median ransom payment</p>
+                        <span class="trend down">-23% YoY</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>64%</h3>
+                        <p>Refused to pay ransom</p>
+                        <span class="trend up">+28% YoY</span>
+                    </div>
+                    <div class="stat-card critical">
+                        <h3>$2.66B</h3>
+                        <p>Estimated total damages</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3>Ransom Payment Trends</h3>
+                    <canvas id="ransomChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Recovery Time Section -->
+            <section id="recovery" class="content-section">
+                <h2>Recovery Statistics</h2>
+                <div class="stat-cards">
+                    <div class="stat-card critical">
+                        <h3>50%</h3>
+                        <p>of SMBs take 24+ hours to recover</p>
+                    </div>
+                    <div class="stat-card warning">
+                        <h3>17%</h3>
+                        <p>of SMBs have cyber insurance</p>
+                    </div>
+                </div>
+                <div class="impact-container">
+                    <h3>Business Continuity Impact</h3>
+                    <div class="impact-description">
+                        <p>SMBs face significant operational disruption during recovery periods, with limited resources to manage business continuity.</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3>Recovery Time Distribution</h3>
+                    <canvas id="recoveryChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Industry Breakdown Section -->
+            <section id="industries" class="content-section">
+                <h2>Industry Breakdown</h2>
+                <div class="industry-container">
+                    <h3>Most Targeted SMB Sectors</h3>
+                    <div class="industry-grid">
+                        <div class="industry-card">
+                            <div class="industry-icon healthcare"></div>
+                            <h4>Healthcare</h4>
+                        </div>
+                        <div class="industry-card">
+                            <div class="industry-icon finance"></div>
+                            <h4>Financial Services</h4>
+                        </div>
+                        <div class="industry-card">
+                            <div class="industry-icon professional"></div>
+                            <h4>Professional Services</h4>
+                        </div>
+                        <div class="industry-card">
+                            <div class="industry-icon retail"></div>
+                            <h4>Retail</h4>
+                        </div>
+                        <div class="industry-card">
+                            <div class="industry-icon manufacturing"></div>
+                            <h4>Manufacturing</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3>Industry Vulnerability Comparison</h3>
+                    <canvas id="industryChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Attack Vectors Section -->
+            <section id="attack-vectors" class="content-section">
+                <h2>Attack Vectors</h2>
+                <div class="vector-cards">
+                    <div class="vector-card">
+                        <div class="vector-icon third-party"></div>
+                        <h3>Third-Party Breaches</h3>
+                        <p>30% of ransomware incidents</p>
+                        <span class="trend up">Doubled YoY</span>
+                        <p class="vector-note">SMBs are particularly vulnerable to supply chain attacks due to limited security resources</p>
+                    </div>
+                    <div class="vector-card">
+                        <div class="vector-icon vulnerability"></div>
+                        <h3>Exploited Vulnerabilities</h3>
+                        <span class="trend up">+34% YoY</span>
+                        <p class="vector-note">Strong correlation between vulnerability exploitation and ransomware deployment</p>
+                    </div>
+                    <div class="vector-card">
+                        <div class="vector-icon social"></div>
+                        <h3>Social Engineering</h3>
+                        <p>17% of breaches</p>
+                        <p class="vector-note">Evolution of social engineering techniques, including AI-powered phishing</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3>Attack Vector Distribution</h3>
+                    <canvas id="vectorChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Recommendations Section -->
+            <section id="recommendations" class="content-section">
+                <h2>Recommendations for SMBs</h2>
+                <div class="recommendations-container">
+                    <div class="recommendation-card">
+                        <div class="recommendation-icon mfa"></div>
+                        <h3>Implement multi-factor authentication</h3>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="recommendation-icon backup"></div>
+                        <h3>Regular data backups</h3>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="recommendation-icon training"></div>
+                        <h3>Security awareness training</h3>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="recommendation-icon patch"></div>
+                        <h3>Patch management</h3>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="recommendation-icon endpoint"></div>
+                        <h3>Endpoint protection</h3>
+                    </div>
+                </div>
+                <div class="smb-guidance">
+                    <h3>SMB-Specific Guidance</h3>
+                    <p>Focus on cost-effective security measures and consider managed security services</p>
+                </div>
+                <div class="recovery-planning">
+                    <h3>Recovery Planning</h3>
+                    <p>Critical given the 50% of SMBs requiring 24+ hours for recovery</p>
+                    <ul>
+                        <li>Robust backup solutions</li>
+                        <li>Tested recovery procedures</li>
+                        <li>Business continuity planning</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="widget-footer">
+            <p>Data source: 2025 Verizon Data Breach Investigations Report</p>
+            <p>Released: April 23, 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

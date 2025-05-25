@@ -1,0 +1,106 @@
+{
+  "report_metadata": {
+    "title": "2025 Verizon Data Breach Investigations Report",
+    "release_date": "April 23, 2025",
+    "analyzed_incidents": 22052,
+    "confirmed_breaches": 12195
+  },
+  "ransomware_overview": {
+    "overall_prevalence": {
+      "percentage_of_breaches": 44,
+      "year_over_year_increase": 37,
+      "previous_year_percentage": 32
+    },
+    "smb_impact": {
+      "percentage_of_smb_breaches": 88,
+      "large_organization_percentage": 39,
+      "description": "SMBs were disproportionately impacted by ransomware attacks compared to larger organizations"
+    }
+  },
+  "financial_impact": {
+    "median_ransom_payment": {
+      "amount_usd": 115000,
+      "previous_year_amount_usd": 150000,
+      "year_over_year_change_percentage": -23
+    },
+    "payment_trends": {
+      "refused_to_pay_percentage": 64,
+      "previous_year_refused_percentage": 50,
+      "year_over_year_change_percentage": 28
+    },
+    "estimated_total_damages_usd": 2660000000
+  },
+  "attack_vectors": {
+    "third_party_breaches": {
+      "percentage": 30,
+      "year_over_year_change": "doubled",
+      "relevance_to_smbs": "SMBs are particularly vulnerable to supply chain attacks due to limited security resources"
+    },
+    "exploited_vulnerabilities": {
+      "year_over_year_increase": 34,
+      "correlation_with_ransomware": "Strong correlation between vulnerability exploitation and ransomware deployment"
+    },
+    "social_engineering": {
+      "percentage_of_breaches": 17,
+      "primary_method": "Phishing",
+      "emerging_trends": "Evolution of social engineering techniques, including AI-powered phishing"
+    },
+    "operational_disruption": {
+      "description": "Threat actors are augmenting traditional ransomware with attacks designed to intentionally disrupt operations",
+      "impact_on_smbs": "Particularly severe for SMBs with limited IT resources and business continuity planning"
+    }
+  },
+  "regional_data": {
+    "apac_region": {
+      "percentage_of_breaches": 80,
+      "ransomware_prevalence": "High"
+    }
+  },
+  "industry_breakdown": {
+    "most_targeted_smb_sectors": [
+      "Healthcare",
+      "Financial Services",
+      "Professional Services",
+      "Retail",
+      "Manufacturing"
+    ],
+    "note": "Specific percentage breakdowns by industry were not available in the search results"
+  },
+  "recommendations": {
+    "key_security_measures": [
+      "Implement multi-factor authentication",
+      "Regular data backups",
+      "Security awareness training",
+      "Patch management",
+      "Endpoint protection"
+    ],
+    "smb_specific_guidance": "Focus on cost-effective security measures and consider managed security services",
+    "recovery_planning": {
+      "importance": "Critical given the 50% of SMBs requiring 24+ hours for recovery",
+      "key_elements": [
+        "Robust backup solutions",
+        "Tested recovery procedures",
+        "Business continuity planning"
+      ]
+    }
+  },
+  "recovery_statistics": {
+    "smb_recovery_time": {
+      "percentage_over_24_hours": 50,
+      "description": "Half of all SMBs take at least 24 hours to recover from a ransomware attack"
+    },
+    "business_continuity": {
+      "operational_impact": "Significant disruption to business operations during recovery period",
+      "cyber_insurance_coverage": {
+        "percentage_of_smbs_with_insurance": 17,
+        "description": "Only 17% of small businesses have cyber insurance, leaving the majority financially vulnerable"
+      }
+    }
+  },
+  "notable_ransomware_groups": {
+    "BlackSuit": {
+      "notable_attack": "CDK Global breach",
+      "origin": "Believed to be a rebranding of Royal ransomware"
+    }
+  }
+}
